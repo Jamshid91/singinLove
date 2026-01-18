@@ -1,0 +1,382 @@
+@media (max-width: 1600px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+
+@media (max-width: 1024px) {
+    .title-text {
+        font-size: 36px;
+        line-height: 34px;
+      }
+      .title-subtext {
+        font-size: 16px;
+      }
+    
+    
+    
+      main {
+        .wrapper {
+          position: relative;
+          padding-top: 16px;
+          .wrapper-info {
+            width: 55%;
+            margin-top: 57px;
+            .title-text {
+              font-size: 42px;
+              line-height: 36px;
+            }
+            .title-subtext {
+              max-width: 400px;
+              margin: 20px 0;
+            }
+          }
+          .wrapper-card {
+            width: 220px;
+            padding: 8px 8px 20px;
+            margin-right: 25px;
+            &::before {
+              content: '';
+              width: 190px;
+              height: 300px;
+            }
+            &::after {
+              content: '';
+              width: 200px;
+              height: 250px;
+            }
+            .card-img {
+              height: 180px;
+            }
+            .card-name {
+              font-size: 14px;
+              margin-top: 12px;
+            }
+            .card-title {
+              font-size: 16px;
+              margin: 8px 0 24px;
+            }
+          }
+        }
+    
+        .unique-song {
+          margin: 100px 0 60px;
+          .title-subtext {
+            margin: 20px 0 40px;
+          }
+          &-item {
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            
+          }
+        }
+    
+        .weCreate {
+          padding: 80px 0 100px;
+          .weCreate-item {
+            .item {
+              width: 300px;
+              &-head {
+                padding: 15px;
+                .item-icon {
+                  margin-right: 8px;
+                }
+                .item-title {
+                  font-size: 16px;
+                }
+              }
+              &-body {
+                padding: 20px 15px;
+                .item-text {
+                  font-size: 14px;
+                }
+              }
+              &:nth-child(2) {
+                margin-left: 20px;
+              }
+              &:nth-child(3) {
+                margin-left: 40px;
+              }
+            }
+          }
+          .weCreate-info {
+            max-width: 300px;
+            .title-subtext {
+              margin: 28px 0;
+            }
+          }
+        }
+    
+        .order {
+          padding: 70px 0 100px;
+          .order-info {
+            width: 45%;
+            .title-subtext {
+              margin: 20px 0;
+              max-width: 400px;
+            }
+            .order-item {
+              .item {
+                font-size: 16px;
+                margin-bottom: 20px;
+                img {
+                  margin-right: 10px;
+                }
+              }
+            }
+            .order-price {
+              width: 300px;
+              padding: 15px;
+              .price-head {
+                font-size: 16px;
+                margin-bottom: 15px;
+              }
+              .price-body {
+                font-size: 14px;
+              }
+            }
+    
+            .order-btn {
+              width: 300px;
+              margin-top: 20px;
+            }
+          }
+          .phone-box {
+            .phone-small {
+              width: 220px;
+            }
+            .phone-big {
+              width: 250px;
+            }
+          }
+        }
+
+        .songs {
+          min-height: auto;
+          padding: 100px 0;
+          &-info {
+            margin-bottom: 50px;
+          }
+          &-box {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+        }
+      }
+}
+@media (max-width: 768px) {
+    .title-text {
+        font-size: 32px;
+        line-height: 28px;
+      }
+    
+      main {
+        .wrapper {
+          padding-top: 8px;
+          .wrapper-box {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+          }
+          .wrapper-info {
+            width: 100%;
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            .title-text {
+              font-size: 36px;
+              line-height: 30px;
+            }
+            .title-subtext {
+              max-width: none;
+              margin: 20px 0;
+            }
+          }
+          .wrapper-card {
+            margin-top: 40px;
+          }
+        }
+    
+        .unique-song {
+          .title-subtext {
+            margin: 20px 0 30px;
+          }
+          &-item {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            .item {
+                .item-btn {
+                    opacity: 1;
+                }
+            }
+          }
+        }
+    
+        .weCreate {
+          padding: 50px 0 100px;
+          .container {
+            flex-direction: column-reverse;
+            position: relative;
+          }
+          .weCreate-item {
+            .item {
+              width: 100%;
+              &:nth-child(2) {
+                margin-left: 0;
+              }
+              &:nth-child(3) {
+                margin-left: 0;
+              }
+            }
+          }
+          .weCreate-info {
+            max-width: none;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            .title-subtext {
+              margin: 20px 0;
+            }
+            .order-btn {
+                position: absolute;
+                top: 102%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+          }
+        }
+    
+        .order {
+          padding: 50px 0 220px;
+          position: relative;
+          .container {
+            flex-direction: column;
+            position: relative;
+          }
+          .order-info {
+            width: 100%;
+            .title-subtext {
+              max-width: none;
+            }
+            .order-price {
+                position: absolute;
+                bottom: -100px;
+                left: 2.5%;
+                width: 95%;
+            }
+            .order-btn {
+                position: absolute;
+                bottom: -170px;
+                left: 50%;
+                transform: translateX(-50%);
+             }
+          }
+          .phone-box {
+            transform: translateX(40px);
+            .phone-small {
+              width: 180px;
+            }
+            .phone-big {
+              width: 200px;
+            }
+          }
+        }
+      }
+}
+
+
+@media (max-width: 576px) {
+    .title-text {
+        font-size: 28px;
+        line-height: 28px;
+      }
+      .title-subtext {
+        font-size: 15px;
+        line-height: 14px;
+      }
+    
+      main {
+    
+        .unique-song {
+            .title-text br {
+                display: none;
+            }
+          .title-subtext {
+            margin: 10px 0 30px;
+            br {
+                display: none;
+            }
+          }
+          &-item {
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 5px;
+            grid-row-gap: 15px;
+            .item {
+                height: 250px;
+                border-radius: 10px;
+                padding: 20px 10px 10px;
+                .item-title {
+                  font-size: 16px;
+                }
+                .item-subtitle {
+                  font-size: 14px;
+                  margin: 10px 0;
+                }
+                .item-btn {
+                  width: 120px;
+                  height: 30px;
+                  font-size: 14px;
+                }
+              }
+          }
+        }
+
+        .songs {
+          .song-card {
+            width: 100%;
+          }
+          .owl-item.center {
+            transform: translateX(-65%);
+            .card {
+              width: 280px;
+              padding: 15px 10px 20px;
+              border-radius: 16px;
+              .card-img {
+                height: 160px;
+                border-radius: 10px;
+              }
+              .card-toptext {
+                font-size: 14px;
+              }
+              .card-title {
+                font-size: 18px;
+              }
+              .card-subtitle {
+                font-size: 14px;
+              }
+              .control {
+               .mejs__time {
+                bottom: -5px;
+               }
+              }
+            }
+          }
+        }
+      }
+}
+
+
+
+
