@@ -18,5 +18,9 @@ $(".owl-carousel").owlCarousel({
   touchDrag: false,
 });
 
+new WOW({
+  mobile: false
+}).init();
+
 
   

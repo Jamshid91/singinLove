@@ -1543,12 +1543,6 @@ main .order .phone-box .phone-big {
     align-items: center;
     text-align: center;
   }
-  main .songs .order-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: -20px auto 0;
-  }
 }
 @media (max-width: 768px) {
   .title-text {
@@ -1557,12 +1551,20 @@ main .order .phone-box .phone-big {
   }
   main .wrapper {
     padding-top: 8px;
+    padding-bottom: 90px;
+    position: relative;
+  }
+  main .wrapper .wrapper-card {
+    margin: 0;
   }
   main .wrapper .logo {
     display: none;
   }
   main .wrapper .order-btn {
-    display: none;
+    position: absolute;
+    top: 107%;
+    left: 50%;
+    transform: translateX(-50%);
   }
   main .wrapper .wrapper-box {
     flex-direction: column;
@@ -1697,14 +1699,14 @@ main .order .phone-box .phone-big {
   main .unique-song-item .item {
     height: 250px;
     border-radius: 10px;
-    padding: 20px 10px 10px;
+    padding: 20px 6px 10px;
   }
   main .unique-song-item .item .item-title {
-    font-size: 16px;
+    font-size: 15px;
   }
   main .unique-song-item .item .item-subtitle {
-    font-size: 14px;
-    margin: 10px 0;
+    font-size: 13px;
+    margin: 5px 0;
   }
   main .unique-song-item .item .item-btn {
     width: 120px;

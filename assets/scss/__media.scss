@@ -165,12 +165,6 @@
             align-items: center;
             text-align: center;
           }
-          .order-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: -20px auto 0;
-          }
         }
       }
 }
@@ -183,11 +177,19 @@
       main {
         .wrapper {
           padding-top: 8px;
+          padding-bottom: 90px;
+          position: relative;
+          .wrapper-card {
+            margin: 0;
+          }
           .logo {
             display: none;
           }
           .order-btn {
-            display: none;
+            position: absolute;
+            top: 107%;
+            left: 50%;
+            transform: translateX(-50%);
           }
           .wrapper-box {
             flex-direction: column;
@@ -334,13 +336,13 @@
             .item {
                 height: 250px;
                 border-radius: 10px;
-                padding: 20px 10px 10px;
+                padding: 20px 6px 10px;
                 .item-title {
-                  font-size: 16px;
+                  font-size: 15px;
                 }
                 .item-subtitle {
-                  font-size: 14px;
-                  margin: 10px 0;
+                  font-size: 13px;
+                  margin: 5px 0;
                 }
                 .item-btn {
                   width: 120px;
