@@ -9,10 +9,13 @@ $(document).ready(function() {
 
 $(".owl-carousel").owlCarousel({
   loop: true,
-  nav: false,
-  margin: 0,    
+  nav: true,
+  navText: [$('.next-btn'),$('.prev-btn')],
+  margin: 5,    
   center: true,
-  items: 3
+  items: 3,
+  mouseDrag: false,
+  touchDrag: false,
 });
 
 

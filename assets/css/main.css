@@ -439,7 +439,30 @@ main .songs .songs-info .title-subtext {
 main .songs .song-card {
   position: relative;
   z-index: 3;
-  width: 500px;
+  width: 450px;
+}
+main .songs .song-card .next-btn, main .songs .song-card .prev-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgb(73, 67, 125);
+  position: absolute;
+  top: 40%;
+}
+main .songs .song-card .next-btn svg, main .songs .song-card .prev-btn svg {
+  transition: 0.3s all;
+}
+main .songs .song-card .next-btn {
+  left: -15px;
+}
+main .songs .song-card .next-btn:hover svg {
+  transform: translateX(-2px) scale(1.1);
+}
+main .songs .song-card .prev-btn {
+  right: -15px;
+}
+main .songs .song-card .prev-btn:hover svg {
+  transform: translateX(2px) scale(1.1);
 }
 main .songs .card {
   width: 100%;
@@ -1145,13 +1168,15 @@ main .songs .owl-carousel .owl-stage {
 main .songs .owl-item.center {
   position: relative;
   z-index: 3;
-  transform: translateX(-70px);
+  transform: translateX(-80px);
+  transition: 0.3s all;
 }
 main .songs .owl-item.center .card {
   width: 313px;
   background: rgb(73, 67, 125);
   padding: 15px 20px 25px;
   border-radius: 24px;
+  animation: cardAnim 0.3s linear;
 }
 main .songs .owl-item.center .card .card-img {
   height: 200px;
@@ -1183,6 +1208,14 @@ main .songs .owl-item.center .card .control .mejs__currenttime-container {
 }
 main .songs .owl-item.center .card .control .mejs__duration-container {
   left: 55%;
+}
+@keyframes cardAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 main .weCreate {
   padding: 111px 0 142px;
@@ -1500,7 +1533,7 @@ main .order .phone-box .phone-big {
   }
   main .songs {
     min-height: auto;
-    padding: 100px 0;
+    padding: 60px 0;
   }
   main .songs-info {
     margin-bottom: 50px;
@@ -1510,6 +1543,12 @@ main .order .phone-box .phone-big {
     align-items: center;
     text-align: center;
   }
+  main .songs .order-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -20px auto 0;
+  }
 }
 @media (max-width: 768px) {
   .title-text {
@@ -1518,6 +1557,12 @@ main .order .phone-box .phone-big {
   }
   main .wrapper {
     padding-top: 8px;
+  }
+  main .wrapper .logo {
+    display: none;
+  }
+  main .wrapper .order-btn {
+    display: none;
   }
   main .wrapper .wrapper-box {
     flex-direction: column;
@@ -1540,20 +1585,20 @@ main .order .phone-box .phone-big {
   }
   main .wrapper .wrapper-info .title-subtext {
     max-width: none;
-    margin: 20px 0;
+    margin: 10px 0 0;
   }
   main .wrapper .wrapper-card {
     margin-top: 40px;
   }
+  main .unique-song {
+    margin-top: 60px;
+  }
   main .unique-song .title-subtext {
-    margin: 20px 0 30px;
+    margin: 10px 0;
   }
   main .unique-song-item {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
-  }
-  main .unique-song-item .item .item-btn {
-    opacity: 1;
   }
   main .weCreate {
     padding: 50px 0 100px;
@@ -1586,7 +1631,7 @@ main .order .phone-box .phone-big {
   }
   main .weCreate .weCreate-info .order-btn {
     position: absolute;
-    top: 102%;
+    top: 105%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -1612,7 +1657,7 @@ main .order .phone-box .phone-big {
   }
   main .order .order-info .order-btn {
     position: absolute;
-    bottom: -170px;
+    bottom: -180px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -1666,14 +1711,23 @@ main .order .phone-box .phone-big {
     height: 30px;
     font-size: 14px;
   }
+  main .songs {
+    padding: 30px 0 0;
+  }
+  main .songs .songs-info {
+    margin-bottom: 40px;
+  }
+  main .songs .songs-info .title-subtext {
+    margin: 20px 0 0;
+  }
   main .songs .song-card {
-    width: 100%;
+    width: 320px;
   }
   main .songs .owl-item.center {
     transform: translateX(-65%);
   }
   main .songs .owl-item.center .card {
-    width: 280px;
+    width: 240px;
     padding: 15px 10px 20px;
     border-radius: 16px;
   }

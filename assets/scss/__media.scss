@@ -156,7 +156,7 @@
 
         .songs {
           min-height: auto;
-          padding: 100px 0;
+          padding: 60px 0;
           &-info {
             margin-bottom: 50px;
           }
@@ -164,6 +164,12 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
+          }
+          .order-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: -20px auto 0;
           }
         }
       }
@@ -177,6 +183,12 @@
       main {
         .wrapper {
           padding-top: 8px;
+          .logo {
+            display: none;
+          }
+          .order-btn {
+            display: none;
+          }
           .wrapper-box {
             flex-direction: column;
             align-items: center;
@@ -197,7 +209,7 @@
             }
             .title-subtext {
               max-width: none;
-              margin: 20px 0;
+              margin: 10px 0 0;
             }
           }
           .wrapper-card {
@@ -206,17 +218,13 @@
         }
     
         .unique-song {
+          margin-top: 60px;
           .title-subtext {
-            margin: 20px 0 30px;
+            margin: 10px 0;
           }
           &-item {
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 10px;
-            .item {
-                .item-btn {
-                    opacity: 1;
-                }
-            }
           }
         }
     
@@ -251,7 +259,7 @@
             }
             .order-btn {
                 position: absolute;
-                top: 102%;
+                top: 105%;
                 left: 50%;
                 transform: translateX(-50%);
             }
@@ -278,7 +286,7 @@
             }
             .order-btn {
                 position: absolute;
-                bottom: -170px;
+                bottom: -180px;
                 left: 50%;
                 transform: translateX(-50%);
              }
@@ -344,13 +352,20 @@
         }
 
         .songs {
+          padding: 30px 0 0;
+          .songs-info {
+            margin-bottom: 40px;
+            .title-subtext {
+              margin: 20px 0 0;
+            }
+          }
           .song-card {
-            width: 100%;
+            width: 320px;
           }
           .owl-item.center {
             transform: translateX(-65%);
             .card {
-              width: 280px;
+              width: 240px;
               padding: 15px 10px 20px;
               border-radius: 16px;
               .card-img {

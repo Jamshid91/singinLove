@@ -383,7 +383,30 @@ body {
       .song-card {
         position: relative;
         z-index: 3;
-        width: 500px;
+        width: 450px;
+        .next-btn, .prev-btn {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: rgba(73, 67, 125, 1);
+          position: absolute;
+          top: 40%;
+          svg {
+            transition: .3s all;
+          }
+        }
+        .next-btn {
+          left: -15px;
+          &:hover svg {
+            transform: translateX(-2px) scale(1.1);
+          }
+        }
+        .prev-btn {
+          right: -15px;
+          &:hover svg {
+            transform: translateX(2px) scale(1.1);
+          }
+        }
       }
       .card {
         width: 100%;
@@ -1198,12 +1221,15 @@ body {
       .owl-item.center {
         position: relative;
         z-index: 3;
-        transform: translateX(-70px);
+        transform: translateX(-80px);
+        transition: .3s all;
         .card {
           width: 313px;
           background: rgba(73, 67, 125, 1);
           padding: 15px 20px 25px;
           border-radius: 24px;
+          animation: cardAnim .3s linear;
+          // transition: .3s all; 
           .card-img {
             height: 200px;
             border-radius: 12px;
@@ -1236,6 +1262,13 @@ body {
            .mejs__duration-container {
             left: 55%;
            }
+          }
+        }
+        @keyframes cardAnim {
+          from {
+            opacity: 0;
+          } to {
+            opacity: 1;
           }
         }
       }
