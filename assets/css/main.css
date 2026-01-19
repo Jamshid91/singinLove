@@ -251,7 +251,7 @@ main .wrapper .wrapper-info {
 }
 main .wrapper .wrapper-info .title-text {
   font-size: 66px;
-  line-height: 55px;
+  line-height: 66px;
   background: #B8B3FA;
   background: linear-gradient(to right, #B8B3FA 0%, #FED1A5 100%);
   -webkit-background-clip: text;
@@ -1435,7 +1435,7 @@ main .order .phone-box .phone-big {
   }
   main .wrapper .wrapper-info .title-text {
     font-size: 42px;
-    line-height: 36px;
+    line-height: 42px;
   }
   main .wrapper .wrapper-info .title-subtext {
     max-width: 400px;
@@ -1599,7 +1599,7 @@ main .order .phone-box .phone-big {
   }
   main .wrapper .wrapper-info .title-text {
     font-size: 36px;
-    line-height: 30px;
+    line-height: 36px;
   }
   main .wrapper .wrapper-info .title-subtext {
     max-width: none;
