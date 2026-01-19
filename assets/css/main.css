@@ -323,6 +323,10 @@ main .wrapper .wrapper-card .card__btn {
   color: #fff;
   font-size: 15px;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 main .wrapper .wrapper-card:hover::before {
   transform: rotate(0deg) translateY(0) translateX(0);
