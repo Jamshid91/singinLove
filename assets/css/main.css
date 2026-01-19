@@ -1333,7 +1333,7 @@ main .order .order-info .order-item .item img {
   margin-right: 18px;
 }
 main .order .order-info .order-price {
-  width: 332px;
+  width: 340px;
   border-radius: 10px;
   padding: 25px;
   position: relative;
@@ -1383,6 +1383,22 @@ main .order .order-info .order-price .price-body {
   z-index: 3;
   font-size: 15px;
   line-height: 100%;
+}
+main .order .order-info .order-price .price-body .timer-info {
+  display: flex;
+}
+main .order .order-info .order-price .price-body .timer-info #timer {
+  display: flex;
+  width: 130px;
+  padding-left: 10px;
+}
+main .order .order-info .order-price .price-body .timer-info div {
+  display: flex;
+  align-items: center;
+}
+main .order .order-info .order-price .price-body .timer-info span {
+  display: block;
+  padding: 0 3px;
 }
 main .order .order-info .order-btn {
   width: 328px;
@@ -1512,7 +1528,6 @@ main .order .phone-box .phone-big {
     margin-right: 10px;
   }
   main .order .order-info .order-price {
-    width: 300px;
     padding: 15px;
   }
   main .order .order-info .order-price .price-head {

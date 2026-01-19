@@ -1397,7 +1397,7 @@ body {
           }
         }
         .order-price {
-          width: 332px;
+          width: 340px;
           border-radius: 10px;
           padding: 25px;
           position: relative;
@@ -1446,6 +1446,23 @@ body {
             z-index: 3;
             font-size: 15px;
             line-height: 100%;
+            .timer-info {
+              display: flex;
+              #timer {
+                display: flex;
+                width: 130px;
+                padding-left: 10px;
+              }
+              div {
+                display: flex;
+                align-items: center;
+              }
+              
+              span {
+                display: block;
+                padding: 0 3px;
+              }
+            }
           }
         }
 
