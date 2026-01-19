@@ -11,16 +11,14 @@ $(".owl-carousel").owlCarousel({
   loop: true,
   nav: true,
   navText: [$('.next-btn'),$('.prev-btn')],
-  margin: 5,    
+  margin: 2,    
   center: true,
   items: 3,
   mouseDrag: false,
   touchDrag: false,
 });
 
-new WOW({
-  mobile: false
-}).init();
+new WOW().init();
 
 
   

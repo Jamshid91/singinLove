@@ -63,7 +63,7 @@
         }
     
         .unique-song {
-          margin: 100px 0 60px;
+          margin: 100px 0 50px;
           .title-subtext {
             margin: 20px 0 40px;
           }
@@ -156,7 +156,7 @@
 
         .songs {
           min-height: auto;
-          padding: 60px 0;
+          padding: 50px 0;
           &-info {
             margin-bottom: 50px;
           }
@@ -215,12 +215,12 @@
             }
           }
           .wrapper-card {
-            margin-top: 40px;
+            margin-top: 25px;
           }
         }
     
         .unique-song {
-          margin-top: 60px;
+          margin-top: 50px;
           .title-subtext {
             margin: 10px 0;
           }
@@ -364,6 +364,16 @@
           .song-card {
             width: 320px;
           }
+          .card {
+            .control {
+              .mejs__controls {
+                width: 90px;
+              }
+              .mejs__time {
+                font-size: 8px;
+               }
+            }
+          }
           .owl-item.center {
             transform: translateX(-65%);
             .card {
@@ -386,6 +396,9 @@
               .control {
                .mejs__time {
                 bottom: -5px;
+               }
+               .mejs__controls {
+                width: 210px;
                }
               }
             }

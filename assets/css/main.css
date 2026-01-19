@@ -691,7 +691,7 @@ main .songs .card .control .mejs__controls {
   list-style-type: none;
   margin: 0;
   position: absolute;
-  width: 100%;
+  width: 130px;
   z-index: 3;
 }
 main .songs .card .control .mejs__button > button {
@@ -733,21 +733,25 @@ main .songs .card .control .mejs__time {
   bottom: 0;
 }
 main .songs .card .control .mejs__currenttime-container {
-  left: 45%;
+  left: 0;
   display: flex;
   align-items: center;
-  width: auto;
+  width: 55%;
   display: block;
+  text-align: right;
+  padding-right: 5px;
 }
 main .songs .card .control .mejs__currenttime-container::after {
   content: "/";
   display: inline-block;
   position: absolute;
-  left: 108%;
+  left: 100%;
   top: 0;
 }
 main .songs .card .control .mejs__duration-container {
-  left: 70%;
+  width: 45%;
+  right: 0;
+  padding-left: 10px;
 }
 main .songs .card .control .mejs__time-rail {
   direction: ltr;
@@ -1176,7 +1180,7 @@ main .songs .owl-item.center .card {
   background: rgb(73, 67, 125);
   padding: 15px 20px 25px;
   border-radius: 24px;
-  animation: cardAnim 0.3s linear;
+  animation: cardAnim 0.5s linear;
 }
 main .songs .owl-item.center .card .card-img {
   height: 200px;
@@ -1203,11 +1207,8 @@ main .songs .owl-item.center .card .control .mejs__time {
   font-size: 14px;
   bottom: -10px;
 }
-main .songs .owl-item.center .card .control .mejs__currenttime-container {
-  left: 36%;
-}
-main .songs .owl-item.center .card .control .mejs__duration-container {
-  left: 55%;
+main .songs .owl-item.center .card .control .mejs__controls {
+  width: 270px;
 }
 @keyframes cardAnim {
   from {
@@ -1373,9 +1374,9 @@ main .order .order-info .order-price .price-head .sale::before {
   top: 10px;
   left: 0;
   width: 100%;
-  height: 3px;
-  background: #151517;
-  transform: rotate(-4deg);
+  height: 2px;
+  background: rgba(250, 38, 38, 0.7);
+  transform: rotate(-10deg);
 }
 main .order .order-info .order-price .price-body {
   position: relative;
@@ -1451,7 +1452,7 @@ main .order .phone-box .phone-big {
     margin: 8px 0 24px;
   }
   main .unique-song {
-    margin: 100px 0 60px;
+    margin: 100px 0 50px;
   }
   main .unique-song .title-subtext {
     margin: 20px 0 40px;
@@ -1533,7 +1534,7 @@ main .order .phone-box .phone-big {
   }
   main .songs {
     min-height: auto;
-    padding: 60px 0;
+    padding: 50px 0;
   }
   main .songs-info {
     margin-bottom: 50px;
@@ -1590,10 +1591,10 @@ main .order .phone-box .phone-big {
     margin: 10px 0 0;
   }
   main .wrapper .wrapper-card {
-    margin-top: 40px;
+    margin-top: 25px;
   }
   main .unique-song {
-    margin-top: 60px;
+    margin-top: 50px;
   }
   main .unique-song .title-subtext {
     margin: 10px 0;
@@ -1725,6 +1726,12 @@ main .order .phone-box .phone-big {
   main .songs .song-card {
     width: 320px;
   }
+  main .songs .card .control .mejs__controls {
+    width: 90px;
+  }
+  main .songs .card .control .mejs__time {
+    font-size: 8px;
+  }
   main .songs .owl-item.center {
     transform: translateX(-65%);
   }
@@ -1748,5 +1755,8 @@ main .order .phone-box .phone-big {
   }
   main .songs .owl-item.center .card .control .mejs__time {
     bottom: -5px;
+  }
+  main .songs .owl-item.center .card .control .mejs__controls {
+    width: 210px;
   }
 }/*# sourceMappingURL=main.css.map */
